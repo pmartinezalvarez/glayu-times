@@ -1,7 +1,7 @@
 
 ## Overview
 
-![mockup](https://github.com/pmartinezalvarez/glayu-times/mock.png)
+![mockup](https://raw.githubusercontent.com/pmartinezalvarez/glayu-times/master/mock.png)
 
 This is a basic Bootstrap theme inspired by old style newspapers. The theme includes the newspaper front page and a 
 generic article page. It has been developed using Sass and grunt to handle the project building.
