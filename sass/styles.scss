@@ -1,0 +1,20 @@
+// The core bootstrap styles
+//@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+// Bootstrap default overrides - settings and mixins
+@import "variables";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "simple-sidebar";
+
+// Add any javascript plugin styles here
+@import "plugins";
+
+// Your main core theme styles
+@import "main";
+
+// Section page styles
+@import "category";
+
+// Category page styles
+@import "article";
+

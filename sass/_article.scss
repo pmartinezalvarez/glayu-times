@@ -1,0 +1,54 @@
+
+.article-details {
+
+  //
+  // Header
+  // --------------------------------------------------
+  .masthead {
+    #masthead-cap {
+      border-bottom: 1px solid $brand-primary;
+    }
+    .branding {
+      font-size: 2em;
+      padding-top: 5px;
+      margin: 0;
+    }
+  }
+
+  //
+  // Article
+  // --------------------------------------------------
+  .article {
+    &:first-child {
+      margin-top: 0;
+    }
+    .byline {
+      color: $gray;
+      font-size: 0.85em;
+      border-top: 1px solid $gray-light;
+      border-bottom: 1px solid $gray-light;
+      padding: 12px 0;
+    }
+    ul.categories {
+      li {
+        a {
+          font-size: 0.95em;
+        }
+      }
+      li + li:before {
+        padding-left: 4px;
+      }
+    }
+    h1 {
+      margin: 25px 0 18px;
+    }
+    .content {
+      margin: 18px 0 60px 0;
+    }
+  }
+
+  .timestamp {
+    font-family: $font-family-sans-serif;
+    color: $brand-secondary;
+  }
+}
