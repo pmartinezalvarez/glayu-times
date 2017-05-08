@@ -22,11 +22,21 @@
       margin: 0;
     }
     #masthead-meta {
-      padding: 40px 0 10px 0;
-      h1 {
-        font-family: $font-family-sans-serif;
-        font-size: 3.5em;
+      font-family: $font-family-sans-serif;
+      padding: 35px 0 10px 0;
+      h1, h3 {
         font-weight: bolder;
+      }
+      h1 {
+        font-size: 3.5em;
+      }
+      h3 {
+        font-size: 1em;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      .kicker-container {
+        min-height: 20px;
       }
     }
     #mini-navigation {

@@ -6055,11 +6055,18 @@ section.subsection {
   margin: 0; }
 
 .category .masthead #masthead-meta {
-  padding: 40px 0 10px 0; }
-  .category .masthead #masthead-meta h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 35px 0 10px 0; }
+  .category .masthead #masthead-meta h1, .category .masthead #masthead-meta h3 {
     font-weight: bolder; }
+  .category .masthead #masthead-meta h1 {
+    font-size: 3.5em; }
+  .category .masthead #masthead-meta h3 {
+    font-size: 1em;
+    margin: 0;
+    text-transform: uppercase; }
+  .category .masthead #masthead-meta .kicker-container {
+    min-height: 20px; }
 
 .category .masthead #mini-navigation {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
