@@ -2,28 +2,73 @@
 .category {
 
   //
+  // Commons
+  // --------------------------------------------------
+  section {
+    border-bottom: none;
+  }
+
+  section.subsection {
+    border-top: 1px solid $gray-darker;
+    margin: 0 0 35px 0;
+    .section-header {
+      h2 {
+        font-family: $font-family-sans-serif;
+        font-size: 1.3em;
+        font-weight: bolder;
+        margin: 12px 0 20px 0;
+      }
+    }
+    .article {
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  //
   // Header
   // --------------------------------------------------
 
   .masthead {
+    #masthead-cap {
+      border-bottom: 1px solid $gray-light;
+    }
+    .branding {
+      font-size: 2em;
+      padding-top: 5px;
+      margin: 0;
+    }
     #masthead-meta {
-      padding: 12px 0;
-      .branding {
+      padding: 40px 0 10px 0;
+      h1 {
+        font-family: $font-family-sans-serif;
         font-size: 3.5em;
-        margin: 0;
-        text-align: center;
+        font-weight: bolder;
       }
     }
     #mini-navigation {
-      border-top: 2px solid $brand-primary;
-      padding: 4px 60px;
-      border-bottom: 1px solid $gray-light;
+      font-family: $font-family-sans-serif;
+      text-transform: uppercase;
+      border-top: 1px solid $gray-light;
+      border-bottom: 2px solid $brand-primary;
+      padding: 5px 0;
+      height: 34px;
       .nav {
         li {
           a {
-            margin: 5px 2px 5px 0;
-            padding: 0 4px;
+            font-size: 0.8em;
+            margin: 5px 2px 5px;
+            padding: 0 5px 0 0;
+            display: inline;
+            &:hover, &:focus {
+              background-color: transparent;
+              text-decoration: underline;
+            }
           }
+        }
+        li + li:before {
+          content: " | ";
         }
       }
     }
