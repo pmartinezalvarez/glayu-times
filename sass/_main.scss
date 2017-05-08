@@ -18,6 +18,14 @@ hr {
   margin: 16px 0;
   padding-top: 0;
   border-bottom: none;
+  &.scotch-rule {
+    box-sizing: content-box;
+    content: '';
+    display: block;
+    border-top: 2px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    height: 1px;
+  }
 }
 
 .thumbnail {
@@ -41,15 +49,10 @@ blockquote {
 }
 
 section {
-  border-bottom: 1px solid $gray-light;
   margin-top: 20px;
   &:last-child {
     border-bottom: none;
   }
-}
-
-.last {
-  border-bottom: none !important;
 }
 
 // Navs
@@ -155,6 +158,7 @@ h1 a, h2 a, h3 a, h4 a, .nav a, .navbar a {
 // --------------------------------------------------
 
 .article {
+  border-bottom: 1px solid $gray-light;
   ul.categories {
     display: block;
     text-transform: uppercase;
@@ -178,6 +182,19 @@ h1 a, h2 a, h3 a, h4 a, .nav a, .navbar a {
       color: $brand-secondary;
     }
   }
+  &.last {
+    border-bottom: none !important;
+  }
+  .byline {
+    color: $gray;
+    font-size: 0.8em;
+  }
+
+}
+
+.timestamp {
+  font-family: $font-family-sans-serif;
+  color: $brand-secondary;
 }
 
 //
@@ -224,6 +241,7 @@ h1 a, h2 a, h3 a, h4 a, .nav a, .navbar a {
 // --------------------------------------------------
 
 @media (max-width: $screen-sm-max) {
+
   section {
     border-bottom: none;
     margin: 0;
@@ -232,20 +250,22 @@ h1 a, h2 a, h3 a, h4 a, .nav a, .navbar a {
     }
   }
   .article {
+    margin: 0 0 30px 0 !important;
+    padding: 0 0 15px 0 !important;
     ul.categories {
       li {
         a {
-          font-size: 0.8em;
+          font-size: 1em !important;
         }
       }
     }
-    margin-bottom: 20px;
     font-size: 1.3em;
     h1 {
       font-size: 1.6em;
     }
     h2 {
       font-size: 1.1em;
+      margin: 6px 0;
     }
   }
 
@@ -264,5 +284,4 @@ h1 a, h2 a, h3 a, h4 a, .nav a, .navbar a {
       }
     }
   }
-
 }

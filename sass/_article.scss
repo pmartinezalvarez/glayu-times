@@ -19,6 +19,7 @@
   // Article
   // --------------------------------------------------
   .article {
+    border-bottom: none !important;
     &:first-child {
       margin-top: 0;
     }

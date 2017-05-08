@@ -1,0 +1,36 @@
+
+
+//
+// Featured News
+// --------------------------------------------------
+
+.featured {
+
+  //
+  // Article
+  // --------------------------------------------------
+
+  .article {
+    padding: 0 0 5px;
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: 0;
+    margin-top: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+    ul.categories {
+      li {
+        a {
+          font-size: 0.75em;
+        }
+      }
+      li + li:before {
+        padding-left: 4px;
+      }
+    }
+    h2 {
+      font-size: 1.7em;
+      margin: 0 0 5px;
+    }
+  }
+}
